@@ -1,13 +1,17 @@
 import './App.css'
 import Greetings from './Greetings'
+import User from './User'
+import Users from './Users'
 
 function App() {
   console.log("app component.")
   return (
-    <div>
+    <>
       <h1>Main Component</h1>
       <Greetings />
-    </div>
+      <User />
+      <Users/>
+    </>
   )
 }
 
