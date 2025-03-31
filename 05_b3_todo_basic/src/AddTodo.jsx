@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, memo } from "react";
 
-const AddTodo = ({appendTodo}) => {
+const AddTodo = memo(({appendTodo}) => {
+    console.log("AddTodo Rendering..")
 
     const [text, setText] = useState("")
 
@@ -15,6 +16,6 @@ const AddTodo = ({appendTodo}) => {
             <button onClick={handleSubmit}>Add</button>
         </div>
     )
-}
+})
 
 export default AddTodo;
